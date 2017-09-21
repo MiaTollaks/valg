@@ -14,28 +14,30 @@ subtitle: Hvilket parti er du mest enig med?
                 <p>Venstre</p>
                 <img src="">
             </div>
-            <div class="card card-wrapper">
+            <div class="card">
+                <div class="card-wrapper">
+                    
+                    {{#each global.q-cards}}
+                    <div class="card-head" style="display: flex;">
+                        {{> cards}}
+                    </div>
+                    {{/each}}
 
-                {{#each global.q-cards}}
-                <div class="card-head" style="display: block;">
-                    {{> cards}}
+
+                    <div class="alternativ">
+                        <ul>
+                            <li class="btn btn-1">Helt enig </li>  
+                            <li class="btn btn-2">Litt enig</li>  
+                            <li class="btn btn-3">Vet ikke</li>  
+                            <li class="btn btn-4">Litt uenig</li>  
+                            <li class="btn btn-5">Helt uenig</li>  
+                        </ul>
+                    </div> 
+                    <div class="back-next">
+                        <div class="btn-back-next">Forrige</div>
+                        <div class="btn-back-next">Neste</div>
+                    </div>  
                 </div>
-                {{/each}}
-            
-                
-                <div class="alternativ">
-                    <ul>
-                        <li class="btn btn-1">Helt enig </li>  
-                        <li class="btn btn-2">Litt enig</li>  
-                        <li class="btn btn-3">Vet ikke</li>  
-                        <li class="btn btn-4">Litt uenig</li>  
-                        <li class="btn btn-5">Helt uenig</li>  
-                    </ul>
-                </div> 
-                <div class="back-next">
-                    <div class="btn-back-next">Forrige</div>
-                    <div class="btn-back-next">Neste</div>
-                </div>  
             </div>
         </div>
       </div>

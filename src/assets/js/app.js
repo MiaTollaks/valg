@@ -32,7 +32,7 @@ $(document).foundation();
 $(document).ready(function(){
 
     $(".card-head").on("swiperight", function(){
-
+        
         $(this).addClass('rotate-left').delay(700).fadeOut(1);
 
         if ($(this).is(':first-child')){
@@ -42,7 +42,11 @@ $(document).ready(function(){
 
     $(".card-head").on("swipeleft",function(){
         $(this).addClass('rotate-right').delay(700).fadeOut(1);
-
+        
+        if ($(this).is(':first-child')){
+            $('.finished').css('display','block');
+        }        
+                
     });
 
 });
