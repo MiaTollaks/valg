@@ -10,3 +10,20 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+$(function(){
+    cardNext();
+    
+});
+
+function cardNext() {
+    $('.btn').on('click', function(){
+        $(this).addClass('clicked');
+        $(this).siblings().removeClass('clicked');
+        
+        $('.back-next').css('display', 'block');  
+       
+         
+    }); // end click
+    
+} // end cardNext()
