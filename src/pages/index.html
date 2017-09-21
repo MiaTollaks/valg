@@ -5,12 +5,33 @@ subtitle: Hvilket parti er du mest enig med?
 ---
 
 <div class="row small-up-1 card-container">
-    {{#each global.q-cards}}
-        <div class="column column-block">
-            {{> cards}}
+    
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="small-12 cell">
+            <div class="card card-wrapper">
+
+                {{#each global.q-cards}}
+                <div class="card-head" style="display: block;">
+                    {{> cards}}
+                </div>
+                {{/each}}
+                
+                <div class="alternativ">
+                    <ul>
+                        <li class="btn btn-1">Helt enig </li>  
+                        <li class="btn btn-2">Litt enig</li>  
+                        <li class="btn btn-3">Vet ikke</li>  
+                        <li class="btn btn-4">Litt uenig</li>  
+                        <li class="btn btn-5">Helt uenig</li>  
+                    </ul>
+                </div> 
+                <div class="back-next">
+                    <div class="btn-back-next">Forrige</div>
+                    <div class="btn-back-next">Neste</div>
+                </div>  
+            </div>
         </div>
-    {{/each}}
-
+      </div>
+    </div>
 </div>
-
-  
