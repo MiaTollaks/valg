@@ -20,9 +20,54 @@ function cardNext() {
         $(this).addClass('clicked');
         $(this).siblings().removeClass('clicked');
         
-        $('.back-next').css('display', 'block')   
-         
-    }); // end click
+        $('.back-next').css('display', 'block');   
+                
+    }); 
+    
+    $('.next').on('click', function(){ 
+        console.log('xli');
+        
+        //make first question active, hide others
+        $('.card-head').first().addClass('active');
+        $('.card-head').hide();    
+        $('.active').show();
+        
+        //move to nexy by making active inacice
+        $('.active').removeClass('active').addClass('oldActive'); 
+
+        if ( $('.oldActive').is(':last-child')) {
+            $('.card-head').first().addClass('active');
+        } else {
+            $('.oldActive').next().addClass('active');
+        }
+
+        $('.oldActive').removeClass('oldActive');
+        $('.card-head').fadeOut();
+        $('.active').fadeIn();
+
+        $('.btn').removeClass('clicked');    
+        $('.back-next').css('display', 'none');
+    });
+    
+    $('.prev').click(function(){
+        $('.active').removeClass('active').addClass('oldActive');  
+
+        if ( $('.oldActive').is(':first-child')) {
+           $('.card-head').last().addClass('active');
+        } else{
+            $('.oldActive').prev().addClass('active');
+        }
+
+        $('.oldActive').removeClass('oldActive');
+        $('.card-head').fadeOut();
+        $('.active').fadeIn();
+        $('.btn').removeClass('clicked');
+
+    });
+        
+        //hide next & prev
+        $('.back-next').css('display', 'none');
+    
     
 } // end cardNext()
 
