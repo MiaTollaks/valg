@@ -24,123 +24,43 @@ function cardNext() {
                 
     }); 
     
-    $('.next').on('click', function(){ 
-        console.log('xli');
-        
-        //make first question active, hide others
-        $('.card-head').first().addClass('active');
-        $('.card-head').hide();    
-        $('.active').show();
-        
-        //move to nexy by making active inacice
-        $('.active').removeClass('active').addClass('oldActive'); 
-
-        if ( $('.oldActive').is(':last-child')) {
-            $('.card-head').first().addClass('active');
-        } else {
-            $('.oldActive').next().addClass('active');
-        }
-
-        $('.oldActive').removeClass('oldActive');
-        $('.card-head').fadeOut();
-        $('.active').fadeIn();
-
-        $('.btn').removeClass('clicked');    
-        $('.back-next').css('display', 'none');
-    });
+    $('.card-head').first().addClass('active');
     
-    $('.prev').click(function(){
-        $('.active').removeClass('active').addClass('oldActive');  
-
-        if ( $('.oldActive').is(':first-child')) {
-           $('.card-head').last().addClass('active');
-        } else{
-            $('.oldActive').prev().addClass('active');
-        }
-
-        $('.oldActive').removeClass('oldActive');
-        $('.card-head').fadeOut();
-        $('.active').fadeIn();
-        $('.btn').removeClass('clicked');
-
-    });
+    $('.next').on('click', function(){ 
         
         //hide next & prev
         $('.back-next').css('display', 'none');
+        $('.btn').removeClass('clicked');
+        
+        var currentImg = $('.active');
+        var nextImg = currentImg.next();
+        
+        if(nextImg.length){
+            currentImg.removeClass('active').css('z-index', -10);
+            nextImg.addClass('active').css('z-index', 10);
+        }
+    });
     
     
-} // end cardNext()
+    $('.prev').click(function(){
+        
+        //hide next & prev
+        $('.back-next').css('display', 'none');
+        $('.btn').removeClass('clicked');
+        
+        var currentImg = $('.active');
+        var prevImg = currentImg.prev();
 
-
- //SLIDESHOW
-
-
-//$('.card-head').first().addClass('active');
-//$('.card-head').hide();    
-//$('.active').show();
-//
-//$('.btn-back-next').click(function(){
-//   $('.active').removeClass('active').addClass('oldActive'); 
-//    
-//    if ( $('.oldActive').is(':last-child')) {
-//        $('.card-head').first().addClass('active');
-//    } else {
-//        $('.oldActive').next().addClass('active');
-//    }
-//    
-//    $('.oldActive').removeClass('oldActive');
-//    $('.card-head').fadeOut();
-//    $('.active').fadeIn();
-//    
-//    $('.btn').removeClass('clicked');    
-//    $('.back-next').css('display', 'none');
-//});
-//    
-//    
-//$('.etst').click(function(){
-//    $('.active').removeClass('active').addClass('oldActive');  
-//
-//    if ( $('.oldActive').is(':first-child')) {
-//       $('.card-head').last().addClass('active');
-//    } else{
-//        $('.oldActive').prev().addClass('active');
-//    }
-//
-//    $('.oldActive').removeClass('oldActive');
-//    $('.card-head').fadeOut();
-//    $('.active').fadeIn();
-//    $('.btn').removeClass('clicked');
-//
-//});
-//    
+        if(prevImg.length){
+          currentImg.removeClass('active').css('z-index', -10);
+          prevImg.addClass('active').css('z-index', 10);
+        }
+        //hide next & prev
+        $('.back-next').css('display', 'none');
+    });
+        
     
-
-//$(document).ready(function(){
-//
-////    $(".card-head").on("swiperight", function(){
-////
-////        
-////        $(this).addClass('rotate-left').delay(700).fadeOut(1);
-////
-////        if ($(this).is(':first-child')){
-////            $('.finished').css('display','block');
-////        }
-////    });  
-////
-////    $(".card-head").on("swipeleft",function(){
-////        $(this).addClass('rotate-right').delay(700).fadeOut(1);
-////        
-////        if ($(this).is(':first-child')){
-////            $('.finished').css('display','block');
-////        }        
-////                
-////    });
-//    
-//    
-//    
-//
-//});
-//
-
-
-
+    
+    
+    
+} // end cardNext
