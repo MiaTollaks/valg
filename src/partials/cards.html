@@ -1,31 +1,20 @@
-<div class="grid-container">
-  <div class="grid-x grid-margin-x">
-    <div class="small-12 cell">
-        <div class="card-wrapper">
-          <div class="card q-card">
-              <div class="card-divider">
-                  <p>{{title}}</p>
-              </div>
-              
-              <div class="card-section">
-                <p>{{sub-title}}</p>
-                <small>Fortell meg mer</small>
-<!--                <img src="assets/img/logo.svg">-->
-                <div class="alternativ">
-                    <ul>
-                        <li class="btn btn-1">{{alt1}}</li>  
-                        <li class="btn btn-2">{{alt2}}</li>  
-                        <li class="btn btn-3">{{alt3}}</li>  
-                        <li class="btn btn-4">{{alt4}}</li>  
-                        <li class="btn btn-5">{{alt5}}</li>  
-                    </ul>
-                </div> 
-                <div class="back-next">
-                    <div class="btn-back-next">Forrige</div>
-                    <div class="btn-back-next">Neste</div>
-                </div>  
-              </div>       
-        </div>
-      </div>
+
+<div class="head-content">
+    <div class="card-top">
+        <h5>{{number}}: </h5>
+        <p>{{title}}</p>
     </div>
-  </div>
+    <p>{{question}}</p>
+    <div class="btn-more" data-open="{{fortellmer-id}}">Fortell meg mer</div>
+
+</div>    
+
+<!--Fortell mer - modal -->
+<div class="reveal fortellmer" id="{{fortellmer-id}}" data-reveal>
+    <h1>{{modal-title}}</h1>
+    <p class="modal-text">{{modal-text}}</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    <strong data-close aria-label="Close modal"> LUKK </strong>
+</div>
