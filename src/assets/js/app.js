@@ -19,15 +19,15 @@ function cardNext() {
     // change color on clicked
     // show back-next on click: ikke-viktig, vetikke, viktig
     $('.btn-viktig, .btn-ikke-viktig').on('click', function(){
-        $(this).addClass('clicked-2');
-        $(this).siblings().removeClass('clicked-2');
+        $(this).addClass('clicked-viktig');
+        $(this).siblings().removeClass('clicked-viktig');
         $('.back-next').addClass("show-back-next animated fadeInUp");
     }); 
     
     // animate and change colors 
     $('.btn-valg').on('click', function(){
-        $(this).addClass('animated pulse clicked');
-        $(this).siblings().removeClass('animated pulse clicked');
+        $(this).addClass('animated pulse clicked-valg');
+        $(this).siblings().removeClass('animated pulse clicked-valg');
         
         // viktig, ikke-viktig shows up when valg is clicked - minus vetikke
         $('.btn-viktig, .btn-ikke-viktig').css('visibility', 'visible').addClass("animated fadeInUp"); 
@@ -35,10 +35,10 @@ function cardNext() {
     
     //VET IKKE BUTTON 
     $('.btn-vetikke').on('click', function(){
-        $(this).addClass('animated pulse clicked');
+        $(this).addClass('animated pulse clicked-valg');
         $('.back-next').addClass("show-back-next animated fadeInUp");
-        $('.btn-valg').removeClass('clicked');
-        $('.btn-viktig, .btn-ikke-viktig').removeClass('clicked-2');
+        $('.btn-valg').removeClass('clicked-valg');
+        $('.btn-viktig, .btn-ikke-viktig').removeClass('clicked-viktig');
         $('.btn-viktig, .btn-ikke-viktig').css('visibility', 'hidden');
     });
     
@@ -50,9 +50,9 @@ function cardNext() {
         
         //hide next & prev & viktig
         $('.back-next').removeClass('show-back-next');
-        $('.btn-valg, .btn-vetikke').removeClass('clicked animated pulse');
+        $('.btn-valg, .btn-vetikke').removeClass('clicked-valg animated pulse');
         $('.btn-viktig, .btn-ikke-viktig').css('visibility', 'hidden').removeClass("animated fadeInUp");
-        $('.btn-viktig, .btn-ikke-viktig').removeClass('clicked-2');
+        $('.btn-viktig, .btn-ikke-viktig').removeClass('clicked-viktig');
         
         // next card
         var currentImg = $('.active');
@@ -79,9 +79,9 @@ function cardNext() {
         
         //hide next & prev
         $('.back-next').removeClass('show-back-next');
-        $('.btn-valg').removeClass('clicked animated pulse');
-        $('.btn-viktig, .btn-ikke-viktig').removeClass('clicked-2');
-        $('.btn-vetikke').removeClass('clicked');
+        $('.btn-valg').removeClass('clicked-valg animated pulse');
+        $('.btn-viktig, .btn-ikke-viktig').removeClass('clicked-viktig');
+        $('.btn-vetikke').removeClass('clicked-valg');
         $('.btn-viktig, .btn-ikke-viktig').css('visibility', 'hidden');
         
         //previous card
