@@ -8,13 +8,19 @@ subtitle: Hvilket parti er du mest enig med?
     
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
-        <div class="small-12 cell">
-            <div class="finished">
-                <h2>Du er mest enig med:</h2>
-                <p>Venstre</p>
-                <img src="">
-            </div>
+        <div class="small-12 medium-6 medium-offset-3 cell">
+            
             <div class="card">
+                <div class="finished">
+                    <div class="finished-inner">
+                        <h2>Du er mest enig med:</h2>
+                        <img src="{{root}}assets/img/venstre.png" width="100px">
+                        <p>På andre og tredjeplass:</p>
+                        <img src="{{root}}assets/img/mdg.png" width="50px">
+                        <img src="{{root}}assets/img/sv.svg" width="50px">
+                        <div class="btn-start-over">Ta testen på nytt</div>
+                    </div>
+                </div>
                 <div class="card-wrapper">
                     
                     {{#each global.q-cards}}
@@ -23,14 +29,15 @@ subtitle: Hvilket parti er du mest enig med?
                     </div>
                     {{/each}}
 
-
                     <div class="alternativ">
                         <ul>
-                            <li class="btn btn-1">Helt enig </li>  
-                            <li class="btn btn-2">Litt enig</li>  
-                            <li class="btn btn-3">Vet ikke</li>  
-                            <li class="btn btn-4">Litt uenig</li>  
-                            <li class="btn btn-5">Helt uenig</li>  
+                            <li class="btn-valg">Litt enig</li> 
+                            <li class="btn-valg">Litt uenig</li> 
+                            <li class="btn-valg">Helt enig </li>
+                            <li class="btn-valg">Helt uenig</li> 
+                            <li class="btn-ikke-viktig">Ikke viktig</li>
+                            <li class="btn-vetikke">Vet ikke</li>
+                            <li class="btn-viktig">viktig</li>
                         </ul>
                     </div> 
                     <div class="back-next">

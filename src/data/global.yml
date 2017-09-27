@@ -1,27 +1,59 @@
 
 q-cards:
     -
-        title: 1 av 20 | Arbeidsliv
-        sub-title: Det var feil å gjøre det lettere å ansette folk midlertidig. Arbeidsmiljøloven bør endres.
+        number: 1 av 20
+        title: Arbeidsliv
+        question: Det var feil å gjøre det lettere å ansette folk midlertidig. Arbeidsmiljøloven bør endres.
+        fortellmer-id: fortellmer-1
+        modal-title: Arbeidsmiljøloven
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+    -   
+        number: 2 av 20
+        title: Arbeidsliv
+        question: Formuesskatten bør fjernes på sikt.
+        fortellmer-id: fortellmer-2
+        modal-title: Formueskatten
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
     -
-        title: 2 av 20 | Arbeidsliv
-        sub-title: Formuesskatten bør fjernes på sikt.
+        number: 3 av 20
+        title: Arbeidsliv
+        question: Skatter og avgifter bør vris slik at miljøfiendtlig atferd straffer seg og miljøvennlig atferd lønner seg.
+        fortellmer-id: fortellmer-3
+        modal-title: Miljøvennlig atferd
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
     -
-        title: 3 av 20 | Arbeidsliv
-        sub-title: Skatter og avgifter bør vris slik at miljøfiendtlig atferd straffer seg og miljøvennlig atferd lønner seg mer.
+        number: 4 av 20
+        title: Skole og oppvekst
+        question: Det bør være et maksimumskrav for antall elever per lærer.
+        fortellmer-id: fortellmer-4
+        modal-title: Antall elever per lærer
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
     -
-        title: 4 av 20 | Skole og oppvekst
-        sub-title: Det bør være et maksimumskrav for antall elever per lærer.
+        number: 5 av 20
+        title: Skole og oppvekst
+        question: Kontantstøtten bør opprettholdes som et alternativ til barnehage.
+        fortellmer-id: fortellmer-5
+        modal-title: Kontantstøtten
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
     -
-        title: 5 av 20 | Skole og oppvekst
-        sub-title: Kontantstøtten bør opprettholdes som et alternativ til barnehage.
+        number: 6 av 20
+        title: Asyl og innvandring
+        question: Asylpolitikken bør mykes opp. 
+        fortellmer-id: fortellmer-6
+        modal-title: Asylpolitikken
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
     -
-        title: 6 av 20 | Asyl og innvandring
-        sub-title: Asylpolitikken bør mykes opp. 
+        number: 7 av 20
+        title: Utenriks og forsvar
+        question: Norge bør melde seg ut av NATO og heller satse på nordisk forsvarsallianse. 
+        fortellmer-id: fortellmer-7
+        modal-title: Nordisk forsvarsallianse
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
     -
-        title: 7 av 20 | Utenriks og forsvar
-        sub-title: Norge bør melde seg ut av NATO og heller satse på nordisk forsvarsallianse. 
-    -
-        title: 8 av 20 | Miljø
-        sub-title: Sårbare områder som f.eks Lofoten, Vesterålen, Senja, Mørebankene og iskanten bør vernes mot oljeboring. 
+        number: 8 av 20
+        title: Miljø
+        question: Sårbare områder som f.eks Lofoten, Vesterålen, Senja, Mørebankene og iskanten bør vernes mot oljeboring. 
+        fortellmer-id: fortellmer-8
+        modal-title: Oljeboring i Lofoten
+        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
     
