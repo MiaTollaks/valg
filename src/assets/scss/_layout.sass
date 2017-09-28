@@ -93,7 +93,7 @@ img.modal-img
         padding: 0      
         
     .card-head  /* denne skal flytte på seg */
-        height: 52%
+        height: 48%
         width: 100%
         right: 0%
         //top: 2%
@@ -115,6 +115,7 @@ img.modal-img
                 padding: 0 10px
                 font-size: 1.1em
                 text-align: center
+                line-height: 1.5em
                 
         .card-top
             margin-bottom: 15px
@@ -161,7 +162,7 @@ img.modal-img
     .alternativ
         position: relative
         width: 100%
-        top: 55%
+        top: 50%
         
     .btn-valg
         width: 49%
@@ -196,17 +197,29 @@ img.modal-img
         
     .btn-viktig, .btn-ikke-viktig
         visibility: hidden
-        border-radius: 10px               
+        border-radius: 10px
+        background-color: transparent
         
     .clicked-valg
-        //border: 2px solid $secondary-color
         background-color: $light-teal
         color: white
+        font-size: 1em
         font-weight: bold
         outline: none
         
+        &.enig
+            background:
+                color: $light-teal
+                image: url(../img/thumbsUP.png)
+        
+        &.uenig
+            background:
+                color: $light-teal
+                image: url(../img/thumbsDOWN.png)
+            
+        
     .clicked-viktig
-        border: 3px solid $light-teal
+        border: 2px solid $light-teal
         color: $light-teal
         font-weight: bold
         outline: none   
@@ -217,7 +230,7 @@ img.modal-img
     .back-next
         //display: none
         position: absolute
-        bottom: 0%
+        bottom: 2%
         width: 100%
         left: 0
         
