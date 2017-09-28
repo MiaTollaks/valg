@@ -1,20 +1,20 @@
 
 <div class="head-content">
-    <div class="card-top">
+    <div class="card-top" style="background-image: url({{head-img}})">
         <h5>{{number}}: </h5>
         <p>{{title}}</p>
     </div>
     <p>{{question}}</p>
-    <div class="btn-more" data-open="{{fortellmer-id}}">Fortell meg mer</div>
+    <div class="btn-more" data-open="{{fortellmer-id}}">Mer info</div>
 
 </div>    
 
 <!--Fortell mer - modal -->
-<div class="reveal fortellmer" id="{{fortellmer-id}}" data-reveal>
-    <h1>{{modal-title}}</h1>
-    <p class="modal-text">{{modal-text}}</p>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-    </button>
-    <strong data-close aria-label="Close modal"> LUKK </strong>
+<div class="reveal tiny fortellmer" id="{{fortellmer-id}}" data-reveal data-animation-in="slide-in-up" data-animation-out="slide-out-down">
+    <div class="modal-wrap">
+        <h1>{{modal-title}}</h1>
+        <img src="{{image}}" width="100px" class="modal-img">
+        <p class="modal-text">{{modal-text}}</p>           
+        <div class="btn-lukk" data-close aria-label="Close modal"> <i class="fa fa-times" aria-hidden="true"></i> LUKK </div>
+    </div>
 </div>

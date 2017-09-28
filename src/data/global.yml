@@ -2,58 +2,74 @@
 q-cards:
     -
         number: 1 av 20
+        head-img: assets/img/head-bg-red.svg
         title: Arbeidsliv
         question: Det var feil å gjøre det lettere å ansette folk midlertidig. Arbeidsmiljøloven bør endres.
         fortellmer-id: fortellmer-1
         modal-title: Arbeidsmiljøloven
         modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        image: assets/img/arbeidsliv.svg
     -   
         number: 2 av 20
+        head-img: assets/img/head-bg-red.svg
         title: Arbeidsliv
-        question: Formuesskatten bør fjernes på sikt.
+        question: Formuesskatten gjør det vanskelig for norske eiere å skape arbeidsplasser, derfor må den reduseres mer.
         fortellmer-id: fortellmer-2
         modal-title: Formueskatten
-        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        modal-text: It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. EKSEMPEL PÅ EKSTRA LANG TEKST The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. 
+        image: assets/img/formueskatt.svg
     -
         number: 3 av 20
+        head-img: assets/img/head-bg-red.svg
         title: Arbeidsliv
         question: Skatter og avgifter bør vris slik at miljøfiendtlig atferd straffer seg og miljøvennlig atferd lønner seg.
         fortellmer-id: fortellmer-3
         modal-title: Miljøvennlig atferd
-        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        modal-text: When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.
+        image: assets/img/miljo.svg
     -
         number: 4 av 20
+        head-img: assets/img/head-bg-pink.svg
         title: Skole og oppvekst
-        question: Det bør være et maksimumskrav for antall elever per lærer.
+        question: Det bør være et maksimumskrav for hvor mange elever hver lærer kan ha i klassen.
         fortellmer-id: fortellmer-4
         modal-title: Antall elever per lærer
-        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        modal-text: The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+        image: assets/img/elever.svg
     -
         number: 5 av 20
+        head-img: assets/img/head-bg-pink.svg
         title: Skole og oppvekst
         question: Kontantstøtten bør opprettholdes som et alternativ til barnehage.
         fortellmer-id: fortellmer-5
         modal-title: Kontantstøtten
-        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        modal-text: And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. 
+        image: assets/img/kontantstotte.svg
     -
         number: 6 av 20
+        head-img: assets/img/head-bg-yellow.svg
         title: Asyl og innvandring
-        question: Asylpolitikken bør mykes opp. 
+        question: Asylsøkere mellom 16 og 18 år uten beskyttelsesbehov som kommer alene til Norge skal kunne få permanent opphold. 
         fortellmer-id: fortellmer-6
         modal-title: Asylpolitikken
-        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        modal-text: Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. 
+        image: assets/img/innvandring.svg
     -
         number: 7 av 20
+        head-img: assets/img/head-bg-blue.svg
         title: Utenriks og forsvar
         question: Norge bør melde seg ut av NATO og heller satse på nordisk forsvarsallianse. 
         fortellmer-id: fortellmer-7
         modal-title: Nordisk forsvarsallianse
-        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        modal-text: When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. 
+        image: assets/img/forsvar.svg
     -
         number: 8 av 20
+        head-img: assets/img/head-bg-green.svg
         title: Miljø
         question: Sårbare områder som f.eks Lofoten, Vesterålen, Senja, Mørebankene og iskanten bør vernes mot oljeboring. 
         fortellmer-id: fortellmer-8
         modal-title: Oljeboring i Lofoten
-        modal-text: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        modal-text: The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word and and the Little Blind Text should turn around and return to its own, safe country.
+        image: assets/img/lofoten.svg
     
