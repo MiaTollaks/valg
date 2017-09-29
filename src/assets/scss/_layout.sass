@@ -107,6 +107,9 @@ body
         background-color: white
         box-shadow: 0px 0px 5px -2px rgba(176,173,176,1)
         
+        @media(min-width: 360px)
+            height: 55%
+        
         // få riktig rekkefølge, begynn med nr1
         &:first-child
             z-index: 10
@@ -121,7 +124,12 @@ body
                 font-size: 1.1em
                 text-align: center
                 line-height: 1.5em
-        
+                
+                @media(min-width: 360px)
+                    font-size: 1.2em
+                    padding: 10px 20px
+
+                
         // HEADING & NUMBER        
         .card-top
             margin-bottom: 15px
@@ -141,6 +149,11 @@ body
                 text-align: center
                 text-transform: uppercase
                 line-height: inherit
+                
+                // iPhone 6 & galaxy S5
+                @media(min-width: 360px)
+                    padding: 15px
+                    font-size: 1.4em
         
                 
         // MER INFO         
@@ -172,6 +185,9 @@ body
         position: relative
         width: 100%
         top: 50%
+    
+        @media(min-width: 360px)
+            top: 57%
         
     .btn-valg
         width: 49%
@@ -235,7 +251,7 @@ body
         
     .back-next
         position: absolute
-        bottom: 2%
+        bottom: 3%
         width: 100%
         left: 0
         
