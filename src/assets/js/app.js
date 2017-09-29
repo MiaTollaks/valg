@@ -69,9 +69,6 @@ function cardNext() {
         $viktig.css('visibility', 'hidden').removeClass("animated fadeInUp");
         $viktig.removeClass('clicked-viktig');
         
-        //PREV NOT VISIBLE ON FIRST CARD -> SHOW PREV ONCLICK NEXT
-        $('.prev').addClass('show-prev');
-        
         var currentCard = $('.active');
         var nextCard = currentCard.next();
         
@@ -87,6 +84,9 @@ function cardNext() {
             $('.card-wrapper').css('display', 'none');
             $('.finished').css('display', 'block');            
         }
+        
+        //PREV NOT VISIBLE ON FIRST CARD -> SHOW PREV ONCLICK NEXT
+        $('.prev').addClass('show-prev');
         
     });
     
@@ -108,6 +108,16 @@ function cardNext() {
           currentCard.removeClass('active').css('z-index', -10);
           prevCard.addClass('active').css('z-index', 10);
         }
+        
+        
+        // HIDE PREV WHEN GOING BACK TO FIRST CARD 
+        var $first = $('#id-1');
+                  
+        if ($first[0] === prevCard[0]){
+            $('.prev').removeClass('show-prev');
+        } 
+        //console.log($first.length);
+        
     });
         
     // START OVER 

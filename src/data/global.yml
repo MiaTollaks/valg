@@ -1,6 +1,7 @@
 
 q-cards:
-    -
+    -   
+        id: id-1
         number: 1 av 20
         head-img: assets/img/head-bg-red.svg
         title: Arbeidsliv
