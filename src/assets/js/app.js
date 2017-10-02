@@ -19,6 +19,8 @@ $(function(){
 
 function cardNext() {
     
+    var $startCards = ('.start');
+    
     var $cards = $('.card-head');
     
     var $viktig = $('.btn-viktig, .btn-ikke-viktig');
@@ -41,11 +43,6 @@ function cardNext() {
         // VIKTIG-BTNs SHOW UP 
         $viktig.css('visibility', 'visible').addClass("animated fadeInUp"); 
         
-//        //shake buttons if not clicked in 5s
-//        $('.btn-viktig, .btn-ikke-viktig').removeClass('fadeInUp');
-//        setTimeout(function(){
-//            $('.btn-viktig, .btn-ikke-viktig').addClass('tada');
-//        }, 5000);
     }); 
     
     // VET IKKE BUTTON: ANIMATE -> SHOW NEXT -> HIDE VIKTIG

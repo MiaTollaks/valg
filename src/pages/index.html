@@ -26,6 +26,12 @@ subtitle: Hvilket parti er du mest enig med?
                 </div>
                 <div class="card-wrapper">
                     
+                    {{#each global.start}}
+                    <div class="card-head start">
+                        {{> start}}
+                    </div>
+                    {{/each}}
+                    
                     {{#each global.q-cards}}
                     <div class="card-head" id="{{id}}">
                         {{> cards}}

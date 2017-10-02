@@ -1,3 +1,23 @@
+start:
+    -
+        title: Dagbladets valgomat 2017
+        question: Hvilket parti er du mest enig med?
+        img: assets/img/partier.jpg
+        button: Begynn test
+    -
+        title: Alder? 
+        question: Hvor gammel er du? 
+        alt-1: 18 - 25 år
+        alt-2: 26 - 35 år
+        alt-3: 35 - 50 år
+        alt-4: 50 - 70 år
+        alt-5: 70 +
+    -
+        title: Fylke?
+        question: checkbox
+        
+
+
 
 q-cards:
     -   
