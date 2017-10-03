@@ -2,7 +2,7 @@
     height: 100%
 
     .start-content
-        padding: 20px
+        padding: 0px 20px
 
         h3
             font-weight: bold
@@ -27,54 +27,53 @@
         font-weight: bold
         display: block
         
-    li.person-info
-        //font-size: 1em
-        //line-height: 1
+    .person-info
         text-align: center
         cursor: pointer
         outline: none
         
         &.person-info-clicked
             font-weight: bold
-            font-size: 1.2em
-            color: $primary-color
-            border: 1px solid $primary-color
+            color: white
+            background-color: $light-primary
             border-radius: 5px
+            
     
     .age
         padding-bottom: 10px
         border-bottom: 1px solid #333
+        
+        @media(min-width: 360px)
+            font-size: 1.1em
+            padding-bottom: 20px
             
     .gender 
         padding-top: 10px
         
-        figcaption
-            display: inline-block
-            width: 49%
-        
         img
             display: inline-block
             width: 49%
-            margin-bottom: 10px
-
-            &.person-info-clicked
-                border: 1px solid $primary-color
+            height: 130px
+            margin-bottom: 5px
+            padding: 5px
             
+            @media(min-width: 360px)
+                height: 150px
+
         p 
             text-align: center
-            
-            &.person-info-clicked
-                color: $primary-color
-                border: 1px solid $primary-color
-                border-radius: 5px
+            font-size: .9em
+            margin-bottom: 5px
+            padding: 2px
+                
+            @media(min-width: 360px)
+                font-size: 1em
+                padding: 5px
             
 #map
-    height: 100%      
-         
-            
+    height: 100%                  
             
 svg
-    //border: 1px solid red
     width: 100%
     overflow: visible!important
     position: absolute!important
