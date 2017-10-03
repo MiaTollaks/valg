@@ -89,6 +89,11 @@ function cardNext() {
         
         //PREV NOT VISIBLE ON FIRST CARD -> SHOW PREV ONCLICK NEXT
         $('.prev').addClass('show-prev');
+        var $first = $('#id-1');
+                  
+        if ($first[0] === nextCard[0]){
+            $('.prev').removeClass('show-prev');
+        } 
         
     });
     
