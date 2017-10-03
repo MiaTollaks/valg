@@ -1,22 +1,3 @@
-start:
-    -
-        head-img: assets/img/head-bg-red.svg
-        title: Alder? 
-        question: Hvor gammel er du? 
-        alt-1: 18 - 25 år
-        alt-2: 26 - 35 år
-        alt-3: 36 - 50 år
-        alt-4: 51 - 70 år
-        alt-5: 70 +
-        alt-6: Ønsker ikke å svare
-    -   
-        head-img: assets/img/head-bg-red.svg
-        title: Hvem er du? 
-        question: 
-        alt-1: Mann
-        alt-2: Kvinne
-        alt-3: Annet / Ønsker ikke å svare
-
 q-cards:
     -   
         id: id-1
