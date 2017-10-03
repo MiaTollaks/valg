@@ -1,26 +1,27 @@
 start:
     -
-        title: Dagbladets valgomat 2017
-        question: Hvilket parti er du mest enig med?
-        img: assets/img/partier.jpg
-        img-id: front-img
-        button: Start test
-    -
+        head-img: assets/img/head-bg-red.svg
         title: Alder? 
         question: Hvor gammel er du? 
         alt-1: 18 - 25 år
         alt-2: 26 - 35 år
-        alt-3: 35 - 50 år
-        alt-4: 50 - 70 år
+        alt-3: 36 - 50 år
+        alt-4: 51 - 70 år
         alt-5: 70 +
-        button: Neste
+        alt-6: Ønsker ikke å svare
+    -   
+        head-img: assets/img/head-bg-red.svg
+        title: Hvem er du? 
+        question: Velg ditt kjønn.
+        alt-1: Mann
+        alt-2: Kvinne
+        alt-3: Ønsker ikke å svare
     -
-        title: Fylke?
-        question: checkbox
-        button: neste
-        
-
-
+        head-img: assets/img/head-bg-red.svg
+        title: Hvor bor du?
+        question: Velg ditt fylke
+        img-id: norway-map
+        img: assets/img/norway.svg
 
 q-cards:
     -   

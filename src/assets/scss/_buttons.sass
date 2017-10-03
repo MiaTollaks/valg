@@ -1,14 +1,31 @@
 .card-wrapper   
     
-    .btn-start
-        width: 50%
-        margin: 10% 20%
+    .btn-section
         position: absolute
-        background-color: $primary-color
-        color: white
-        padding: 15px 10px
-        font-weight: bold
-        text-transform: uppercase
+        bottom: 2%
+        left: 4.5%
+        right: 0%
+        width: 100%
+    
+        .btn-start
+            display: inline-block
+            width: 45%
+            margin-top: 15px
+            padding: 10px
+            text-align: center
+            letter-spacing: 1.5px
+            color: $secondary-color
+            font-size: 1.2em
+            //border: 1px solid
+            
+            &.first
+                width: 80%
+                margin-left: 5%
+                margin-bottom: 10%
+                background-color: $primary-color
+                color: white
+                padding: 20px
+            
         
     .alternativ
         position: relative
