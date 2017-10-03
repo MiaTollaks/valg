@@ -1,0 +1,51 @@
+.finished
+    background:
+        image: url(/assets/img/bg-card.svg)
+        repeat: no-repeat
+        size: cover
+    height: 95vh
+    list-style-type: none
+    margin-top: 5%
+    padding: 0px 10px
+    position: relative
+    color: #333
+    user-select: none
+    display: flex
+    flex-direction: row-reverse
+    border: 1px solid #999
+    border-radius: 5px
+    
+    // * iPad * * * * * * * * * * 
+    @media(min-width: 640px)
+        height: 80vh
+        top: 15%
+        
+     
+    .finished-inner
+        background-color: white
+        padding: 30px 20px
+        height: 90%
+        text-align: center
+        margin-top: 10px
+        box-shadow: 0px 0px 3px 0px rgba(176,173,176,1)
+        
+        img
+            margin: 10px
+            
+        p
+            margin-top: 20px
+            
+        .btn-start-over
+            position: relative
+            top: 15px
+            text-align: center
+            text-transform: uppercase
+            width: 70%
+            padding: 8px 4px
+            margin: auto
+            font-size: .8em
+            letter-spacing: .05em
+            cursor: pointer
+            outline: none
+            border: 1px solid #aaa
+            color: #444

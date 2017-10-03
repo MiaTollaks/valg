@@ -53,4 +53,10 @@
 @include motion-ui-animations;
 
 //global styles
+@import 'finished';
+@import 'vars';
+@import 'buttons';
 @import 'layout';
+@import 'start';
+@import 'modal';
+

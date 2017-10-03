@@ -1,0 +1,146 @@
+.card-wrapper   
+    
+    .btn-start
+        width: 50%
+        margin: 10% 20%
+        position: absolute
+        background-color: $primary-color
+        color: white
+        padding: 15px 10px
+        font-weight: bold
+        text-transform: uppercase
+        
+    .alternativ
+        position: relative
+        width: 100%
+        top: 50%
+    
+        // iPhone 6
+        @media(min-width: 360px)
+            top: 57%
+        
+        // * desktop * * * * * * * * * * 
+        @media(min-width: 1024px)
+            width: 80%
+            right: 10%
+        
+    .btn-valg
+        width: 49%
+        background-color: white
+        padding: 20px 10px
+        margin: auto
+        margin-bottom: 4px
+        color: #333
+        cursor: pointer
+        text-align: center
+        position: relative
+        display: inline-block
+        text-transform: uppercase
+        letter-spacing: 1.1px
+        font-size: .9em
+        border: 1px solid $primary-color
+        
+        // * iPad * * * * * * * * * * 
+        @media(min-width: 640px)
+            padding: 30px 10px
+            font-size: 1.2em
+            
+        // * desktop * * * * * * * * * * 
+        @media(min-width: 1024px)
+            width: 24%
+        
+    .btn-vetikke, .btn-viktig, .btn-ikke-viktig
+        background-color: white
+        margin: auto
+        color: #333
+        cursor: pointer
+        text-align: center
+        position: relative
+        display: inline-block
+        text-transform: uppercase
+        border: 1px solid $primary-color
+        width: 32.2%
+        font-size: .75em
+        padding: 15px 2px
+        outline: none
+        
+        // * iPad * * * * * * * * * * 
+        @media(min-width: 640px)
+            font-size: 1em
+        
+    .btn-viktig, .btn-ikke-viktig
+        visibility: hidden
+        border-radius: 10px
+        background-color: transparent
+        
+    .clicked-valg
+        background-color: $light-teal
+        color: white
+        font-size: 1em
+        font-weight: bold
+        outline: none
+        
+        // * iPad * * * * * * * * * * 
+        @media(min-width: 640px)
+            font-size: 1.2em
+        
+        &.enig
+            background:
+                color: $light-teal
+                image: url(../img/thumbsUP.png)
+        
+        &.uenig
+            background:
+                color: $light-teal
+                image: url(../img/thumbsDOWN.png)
+            
+        
+    .clicked-viktig
+        border: 2px solid $light-teal
+        color: $light-teal
+        font-weight: bold
+        outline: none   
+        
+    .back-next
+        position: absolute
+        bottom: 3%
+        width: 100%
+        left: 0
+        
+        // * iPad * * * * * * * * * * 
+        @media(min-width: 640px)
+            bottom: 2%
+        
+        .next, .prev
+            box-sizing: border-box
+            display: inline-block
+            margin-top: 15px
+            padding: 10px
+            text-align: center
+            letter-spacing: 1.5px
+            color: $secondary-color
+            font-size: 1.2em;
+            //border: 1px solid black
+            
+            // * iPad * * * * * * * * * * 
+            @media(min-width: 640px)
+                font-size: 1.5em
+                
+        
+        .next
+            display: none
+            width: 43%
+            float: right
+            text-align: left
+            padding-right: 20px
+        
+            &.show-next
+                display: inline-block
+            
+        .prev
+            display: none
+            width: 43%
+            text-align: right
+            
+            &.show-prev
+                display: inline-block   
