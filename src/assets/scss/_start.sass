@@ -20,23 +20,35 @@
         padding: 10px 5px
         background:
             //color: $dagbladet-red
-            image: url(/assets/img/head-bg-red.svg)
+            image: url(/assets/img/head-bg-start.svg)
             size: cover
         color: white
-        text-align: center
         font-weight: bold
         display: block
         
+        // * iPad * * * * * * * * * * 
+        @media(min-width: 640px)
+            p
+                font-size: 1.7em
+                letter-spacing: 1px
+                margin: auto
+            
     .person-info
         text-align: center
         cursor: pointer
         outline: none
         
+        // * iPad * * * * * * * * * * 
+        @media(min-width: 640px)
+            display: inline-block
+            margin: 10px
+            padding: 10px
+        
         &.person-info-clicked
             font-weight: bold
             color: white
             background-color: $light-primary
-            border-radius: 5px
+            border-radius: 5px           
             
     
     .age
@@ -59,6 +71,8 @@
             
             @media(min-width: 360px)
                 height: 150px
+                width: 30%
+                margin-top: 20px
 
         p 
             text-align: center
