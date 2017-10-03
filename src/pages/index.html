@@ -27,13 +27,27 @@
                                 <button class="btn-start first next" type="button">START TEST</button>
                             </div>
                         </div> 
-                    </div>
+                    </div>  
                     
                     {{#each global.start}}
                     <div class="card-head start">
                         {{> start}}
                     </div>
                     {{/each}}
+                    
+                    <div class="card-head start">
+                        <div class="card-top">
+                            <p>Fylke</p>
+                        </div>
+                        <div class="start-content">
+                            <div id="map" class="norway-map"></div>
+                            <div class="btn-section">
+                                <button class="btn-start prev"><i class="fa fa-chevron-left" aria-hidden="true"></i> Tilbake</button>
+                                <button class="btn-start next">Neste <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div> 
+                    </div>
+                    
                     
                     {{#each global.q-cards}}
                     <div class="card-head" id="{{id}}">

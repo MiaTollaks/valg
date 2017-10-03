@@ -16,12 +16,6 @@ start:
         alt-1: Mann
         alt-2: Kvinne
         alt-3: Ønsker ikke å svare
-    -
-        head-img: assets/img/head-bg-red.svg
-        title: Hvor bor du?
-        question: Velg ditt fylke
-        img-id: norway-map
-        img: assets/img/norway.svg
 
 q-cards:
     -   
