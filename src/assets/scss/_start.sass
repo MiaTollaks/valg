@@ -32,16 +32,17 @@
         line-height: 3
         text-align: center
         cursor: pointer
+        outline: none
         
         &.person-info-clicked
             font-weight: bold
-            font-size: 1.5em
+            font-size: 1.4em
             color: $primary-color
+            outline: none
  
 #map
-    height: 100%
-    background-size: cover            
-    //border: 1px solid black            
+    height: 100%      
+         
             
             
 svg
@@ -49,8 +50,15 @@ svg
     width: 100%
     overflow: visible!important
     position: absolute!important
-    top: -210px
-    left: -70px
+    top: -29%!important
+    left: -10%!important
     
-.map-clicked
-    fill: red
+    @media(max-width: 360px)
+        top: -45%!important
+        left: -25%!important
+        
+        
+    @media(min-width: 425px)
+        top: -25%!important
+        left: 30%!important
+        

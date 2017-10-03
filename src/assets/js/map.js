@@ -67,21 +67,14 @@ fylker.push(NO07);
 
 for (var i = 0; i <= fylker.length; i++) {
 
-    var f = fylker[i];
-    console.log(f);
-    
-    f.mouseover(function() {
-       this.attr({
-            fill: 'red'
-        });
-        f.attr({
-            fill: 'black'
-        });
-        
-    });    
+    fylker[i].mouseover(function(e){
+        this.node.style.fill = 'red';
+    });
+
+    fylker[i].mouseout(function(e){
+        this.node.style.fill = 'black';
+    });
 }
-    
-    
     
 
 
