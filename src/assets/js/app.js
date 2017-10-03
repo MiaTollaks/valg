@@ -26,7 +26,7 @@ function cardNext() {
     var $viktig = $('.btn-viktig, .btn-ikke-viktig');
     var $valg =  $('.btn-valg');
     var $vetikke = $('.btn-vetikke');
-    var $person = $('li.person-info');
+    var $person = $('.person-info');
     
     $person.on('click', function(){
         $(this).addClass('person-info-clicked');

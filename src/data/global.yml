@@ -12,10 +12,10 @@ start:
     -   
         head-img: assets/img/head-bg-red.svg
         title: Hvem er du? 
-        question: Velg ditt kjønn.
+        question: 
         alt-1: Mann
         alt-2: Kvinne
-        alt-3: Ønsker ikke å svare
+        alt-3: Annet / Ønsker ikke å svare
 
 q-cards:
     -   

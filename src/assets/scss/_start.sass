@@ -28,18 +28,46 @@
         display: block
         
     li.person-info
-        font-size: 1.2em
-        line-height: 3
+        //font-size: 1em
+        //line-height: 1
         text-align: center
         cursor: pointer
         outline: none
         
         &.person-info-clicked
             font-weight: bold
-            font-size: 1.4em
+            font-size: 1.2em
             color: $primary-color
-            outline: none
- 
+            border: 1px solid $primary-color
+            border-radius: 5px
+    
+    .age
+        padding-bottom: 10px
+        border-bottom: 1px solid #333
+            
+    .gender 
+        padding-top: 10px
+        
+        figcaption
+            display: inline-block
+            width: 49%
+        
+        img
+            display: inline-block
+            width: 49%
+            margin-bottom: 10px
+
+            &.person-info-clicked
+                border: 1px solid $primary-color
+            
+        p 
+            text-align: center
+            
+            &.person-info-clicked
+                color: $primary-color
+                border: 1px solid $primary-color
+                border-radius: 5px
+            
 #map
     height: 100%      
          

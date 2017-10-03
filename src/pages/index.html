@@ -15,13 +15,17 @@
                         <div class="btn-start-over">Ta testen på nytt</div>
                     </div>
                 </div>
+                
                 <div class="card-wrapper">
+                
+<!-- * * * * *  FIRST CARD * * * -->
+                
                     <div class="card-head start">
                         <div class="card-top">
                             <p>Dagbladets valgomat</p>
                         </div>
                         <div class="start-content">
-                            <h3>Hvilket parti er du mest enig med?</h3>
+                            <h3>Finn ut hvilket parti du er mest enig med!</h3>
                             <img src="{{root}}assets/img/partier.jpg" id="front-img"/>
                             <div class="btn-section">
                                 <button class="btn-start first next" type="button">START TEST</button>
@@ -29,12 +33,39 @@
                         </div> 
                     </div>  
                     
-                    {{#each global.start}}
-                    <div class="card-head start">
-                        {{> start}}
+<!-- * * * * *  2. CARD * * * -->  
+                <div class="card-head start">
+                    <div class="card-top" style="background-image: url({{head-img}})">
+                        <p>Hvem er du? </p>
                     </div>
-                    {{/each}}
+                    <div class="start-content">
+                        <div class="age">
+                            <h3>Alder?</h3>
+                            <ul>
+                                <li class="person-info">18 - 25 år</li>             
+                                <li class="person-info">26 - 35 år</li>
+                                <li class="person-info">26 - 35 år</li>
+                                <li class="person-info">26 - 35 år</li>
+                                <li class="person-info">70 +</li>
+                                <li class="person-info">Ønsker ikke å svare</li>
+                            </ul> 
+                        </div>
+                        <div class="gender">
+                            <h3>Kjønn?</h3>        
+                            <img src="{{root}}assets/img/male.svg" alt="male symbol" class="person-info"> 
+                            <img src="{{root}}assets/img/female.svg" alt="female symbol" class="person-info">
+                            <figcaption>Mann</figcaption>
+                            <figcaption>Kvinne</figcaption>
+                            <p class="person-info">Annet / Ønsker ikke å oppgi</p>
+                        </div>
+                        <div class="btn-section">
+                            <button class="btn-start prev"><i class="fa fa-chevron-left" aria-hidden="true"></i> Tilbake</button>
+                            <button class="btn-start next">Neste <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div> 
+                </div>
                     
+<!-- * * * * *  3. CARD  - MAP   * * * -->                      
                     <div class="card-head start">
                         <div class="card-top">
                             <p>Fylke</p>
@@ -49,6 +80,7 @@
                     </div>
                     
                     
+<!-- * * * * *  QUESTION CARDS   * * * -->                      
                     {{#each global.q-cards}}
                     <div class="card-head" id="{{id}}">
                         {{> cards}}
@@ -70,7 +102,7 @@
                         <div class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i> Tilbake</div>
                         <div class="next">Neste <i class="fa fa-chevron-right" aria-hidden="true"></i></div>
                     </div>  
-                </div>
+                </div> <!-- card wrapper -->
             </div>
         </div>
       </div>
